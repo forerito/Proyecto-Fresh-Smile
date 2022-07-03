@@ -1,0 +1,276 @@
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: url("https://img.freepik.com/vector-gratis/patron-costuras-diente-dibujos-animados-kawaii-implante-corona_74565-419.jpg");
+}
+
+header {
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+.menu {
+    list-style: none;
+    padding: 5px;
+    background-color: #7b254b;
+    width: 90%;
+    height: 75px;
+    max-width: 1000px;
+    margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    float: top;
+    border-radius: 15px;
+    border: 4px solid #b0386e;
+}
+
+#logo {
+    display: flex;
+    float: left;
+    margin: 0;
+    width: 200px;
+    cursor: pointer;
+}
+
+#logoingreso {
+    display: flex;
+    float: right;
+    width: 115px;
+    height: 120px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a:hover {
+    border-bottom: 2px solid #f13be2;
+    background: #23BAC4;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 40px;
+    color: blueviolet;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.triste h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.limpieza {
+    float: right;
+    width: auto;
+    height: 60%;
+    position: absolute;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.triste strong {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.triste p {
+    float: left;
+    padding: 10px;
+    width: 170%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+    border-radius: 10px;
+}
+
+.container1 {
+    width: auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+    background-color: rgba(129, 50, 50, 0.87);
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px 12px rgba(0, 0, 0);
+}
+
+.container1:hover {
+    box-shadow: 0px 2px 6px 12px purple;
+}
+
+.p {
+    width: 28%;
+    font-size: 20px;
+    float: left;
+}
+
+.productos {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.productos img {
+    border-radius: 10px;
+    width: 200px;
+    height: 150px;
+    float: right;
+}
+
+img {
+    border-radius: 10px;
+    width: 200px;
+    height: 150px;
+}
+
+#acordeon ul {
+    text-align: left;
+    display: inline-block;
+    padding: auto;
+    margin: 0 auto;
+}
+
+/* Contenedor de cada acordeon */
+#acordeon {
+    max-width: 670px;
+    padding: 0 15px;
+    text-align: center;
+    padding: 10px;
+    border: 5px solid purple;
+    margin: 10px;
+}
+
+/* Darle estilo a las iniciales */
+.h2::first-line {
+    background-color: hsl(4, 100%, 50%);
+    font-size: 30px;
+}
+
+
+/* estilo de cada palabra */
+#acordeon h2 {
+    font-family: 'hm_light', sans-serif;
+    font-size: 20px;
+    padding: 15px 15px 0;
+    font-weight: 300;
+    padding-bottom: 10px;
+    cursor: pointer;
+    color: #000;
+    margin-top: 0;
+    text-decoration: underline;
+}
+
+/* estilo de parrafo de cada palabra */
+#acordeon p {
+    color: #000;
+    text-align: left;
+    font-family: 'hm_light', sans-serif;
+    font-size: 14px;
+    line-height: 1.45;
+    position: relative;
+    overflow: hidden;
+    max-height: 250px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 0 50px 0 15px;
+    transition: .3s opacity, .6s max-height;
+}
+
+/* caja de cada palabra */
+#acordeon ul li {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    border-radius: 5px;
+    background: #23BAC4;
+    box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.1);
+}
+
+/* para que la flecha suba y baje */
+#acordeon ul li i:before,
+ul li i:after {
+    content: "";
+    position: absolute;
+    background-color: #cc071e;
+    width: 3px;
+    position: absolute;
+    transform: translate(-6px, 0);
+    margin-top: 28px;
+    right: 15px;
+    height: 9px;
+}
+
+/* para que la flecha cambie de dirección */
+#acordeon ul li i:before {
+    transform: translate(-2px, 0) rotate(45deg);
+}
+
+/* para que la flecha cambie de dirección */
+#acordeon ul li i:after {
+    transform: translate(2px, 0) rotate(-45deg);
+}
+
+/* Desaparecer el checked */
+#acordeon ul li input {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+/* al dar click deslice y aparezca el contenido, si no aparece normal */
+#acordeon ul li input:checked~p {
+    max-height: 0;
+    transition: .3s;
+    opacity: 0;
+}
+
+/* La flecha esta hacia a abajo */
+#acordeon ul li input:checked~i:before {
+    transform: translate(2px, 0) rotate(45deg);
+}
+
+/* La flecha cambia hacia arriba */
+#acordeon ul li input:checked~i:after {
+    transform: translate(-2px, 0) rotate(-45deg);
+}

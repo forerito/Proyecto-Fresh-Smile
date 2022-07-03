@@ -1,0 +1,120 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url(img/LOGO.JPG);
+    margin-top: 100px;
+    height: 800px;
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-weight: 700;
+}
+
+form {
+    width: 50%;
+    padding: 50px;
+    background-color: rgba(27, 155, 197, 0.466);
+    padding: 40px 0;
+    box-shadow: 0 0 6px 0 rgba(235, 5, 5, 0.973);
+    border-radius: 10px;
+}
+
+.form {
+    width: 100%;
+    margin: auto;
+}
+
+form .grupo {
+    position: relative;
+    margin-top: 10px;
+    display: block;
+}
+
+input {
+    text-align: center;
+    background: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 96%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+input:focus {
+    outline: none;
+    color: black;
+}
+
+label {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    transition: 0.5s ease all; 
+   
+    /* pointer-events: none;  */
+}
+
+input:focus~label,
+input:valid~label {
+    top: -10px;
+    font-size: 20px;
+    color: red;
+}
+
+/* .barra {
+    background-color: yellow;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+} */
+
+.barra::before {
+    content: "";
+    height: 3px;
+    width: 100%;
+    /* bottom: 1; */
+    position: absolute;
+    background: linear-gradient(to right,#008a2e86, #4568DC);
+    /* transition: 0.3s ease width;
+    left: 0; */
+    
+}
+
+input:focus~.barra::before {
+    width: 100%;
+}
+
+button {
+    font-family: 'Courier New', Courier, monospace;
+    background: -webkit-linear-gradient(to right, #163f74b4, #4568DC);
+    background: linear-gradient(to right, #008a2e86, #4568DC);
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.parrafo{
+    text-align: center;
+    color: black;
+}
+
+@media screen and (max-width:500px) {
+    form {
+        width: 80%;
+    }
+}

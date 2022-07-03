@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: url("https://img.freepik.com/vector-gratis/patron-costuras-diente-dibujos-animados-kawaii-implante-corona_74565-419.jpg");
+}
+
+header {
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+.menu {
+    list-style: none;
+    padding: 5px;
+    background-color: #7b254b;
+    width: 90%;
+    height: 75px;
+    max-width: 1000px;
+    margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    float: top;
+    border-radius: 15px;
+    border: 4px solid #b0386e;
+}
+
+#logo {
+    display: flex;
+    float: left;
+    margin: 0;
+    width: 200px;
+    cursor: pointer;
+}
+
+#logoingreso {
+    display: flex;
+    float: right;
+    width: 115px;
+    height: 120px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a:hover {
+    border-bottom: 2px solid #f13be2;
+    background: #23BAC4;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 40px;
+    color: blueviolet;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 30px;
+    border: 5px solid #000;
+    border-radius: 10px;
+    background-color: hsl(271, 76%, 53%, 0.9);
+}
+
+.productos {
+    width: 350px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px #000;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: #23BAC4;
+}
+
+.productos:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+    box-shadow: 0 12px 16px #000;
+    border: 3px solid #000;
+    background: url("https://img.freepik.com/vector-gratis/patron-costuras-diente-dibujos-animados-kawaii-implante-corona_74565-419.jpg");
+    cursor: pointer;
+}
+
+.productos img {
+    margin-bottom: 8px;
+    width: 100%;
+    height: 210px;
+    border-radius: 5px;
+}
+
+.container .productos {
+    padding: 15px;
+    text-align: center;
+}
+
+.container .productos h4 {
+    margin-bottom: 15px;
+    color: #7A7A7A;
+}
+
+.container .productos p {
+    color: #000000;
+    font-size: 20px;
+    margin-top: 8px;
+    padding: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

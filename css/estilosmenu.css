@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+.menu{
+    list-style: none;
+    padding: 5px;
+    background-color:#7b254b;
+    width: 90%;
+    height: 75px;
+    max-width: 1000px;
+    margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    float: top;
+    border-radius: 15px;
+    border:4px solid #b0386e;
+}
+#logo{
+    display: flex;
+    float: left;
+    margin: 0;
+    width: 200px;
+    cursor: pointer;
+}
+
+#logoingreso{
+    display: flex;
+    float: right;
+    width: 115px;
+    height: 120px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu li a:hover{
+    border-bottom: 2px solid #f13be2;
+    background: #23BAC4;
+}
